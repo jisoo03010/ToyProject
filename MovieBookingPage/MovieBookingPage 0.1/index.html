@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Booking</title>
+    <link rel="stylesheet" href="./common.css">
+    <link rel="shortcut icon"
+        href="https://play-lh.googleusercontent.com/jSV-3vWrK8Qz2E03q5lM-xbLNMGAlSSEawE5OnJJA2CF5Qt092A6QPs2nmAc7-ptPhk"
+        type="image/x-icon">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Movie Booking Page</h1>
+        <div class="box">
+            <div class="moviephoster">
+                <img src="https://us.123rf.com/450wm/worldofvector/worldofvector1605/worldofvector160500004/56434153-les-gens-assis-dans-un-cin%C3%A9ma-film-montrer-cinema-background-les-t%C3%A9l%C3%A9spectateurs-qui-regardent-film-.jpg"
+                    alt="">
+                <img src="https://img.cgv.co.kr/Movie/Thumbnail/Poster/000084/84949/84949_320.jpg" alt="" id="phoster1">
+                <img src="https://img.cgv.co.kr/Movie/Thumbnail/Poster/000085/85549/85549_320.jpg" alt="" id="phoster2">
+                <img src="https://img.cgv.co.kr/Movie/Thumbnail/Poster/000084/84780/84780_320.jpg" alt="" id="phoster3">
+                <img src="https://img.cgv.co.kr/Movie/Thumbnail/Poster/000084/84632/84632_320.jpg" alt="" id="phoster4">
+            </div>
+            <div class="booking">
+                <div id="pickmovie">
+                    <span>Pick a movie</span>
+                    <select name="movie" id="select" onclick="handleOnChange(this)">
+                        <option value="select a movie">select a movie</option>
+                        <option value="스파이더맨-노 웨이 홈" id="sp">스파이더맨-노 웨이 홈 (10,000)</option>
+                        <option value="특송">특송(10,000)</option>
+                        <option value="씽 2게더">씽 2게더(12,000)</option>
+                        <option value="웹스트 사이드 스토리">웹스트 사이드 스토리(8,000)</option>
+                    </select>
+                </div>
+                <div id="Explanation">
+                    <div id="available">
+                        <div class="seatbox"></div>
+                        <span>Available</span>
+                    </div>
+                    <div id="selected">
+                        <div class="seatbox"></div>
+                        <span>Selected</span>
+                    </div>
+                    <div id="occupied">
+                        <div class="seatbox"></div>
+                        <span>Occupied</span>
+                    </div>
+                </div>
+                <div id="screen"></div>
+                <div id="seat">
+                    <div class="leftseat">
+                        <div class="flex">
+                            <div class="seatboxPick">0</div>
+                            <div class="seatboxPick">1</div>
+                        </div>
+                        <div class="flex">
+                            <div class="seatboxPick">2</div>
+                            <div class="seatboxPick">3</div>
+                        </div>
+                        <div class="flex">
+                            <div class="seatboxPick">4</div>
+                            <div class="seatboxPick">5</div>
+                        </div>
+                        <div class="flex">
+                            <div class="seatboxPick">6</div>
+                            <div class="seatboxPick">7</div>
+                        </div>
+                        <div class="flex">
+                            <div class="seatboxPick">8</div>
+                            <div class="seatboxPick">9</div>
+                        </div>
+                        <div class="flex">
+                            <div class="seatboxPick">10</div>
+                            <div class="seatboxPick">11</div>
+                        </div>
+                    </div>
+                    <div class="centerseat">
+                        <div class="one">
+                            <div class="flex">
+                                <div class="seatboxPick">12</div>
+                                <div class="seatboxPick">13</div>
+                            </div>
+                            <div class="flex">
+                                <div class="seatboxPick">14</div>
+                                <div class="seatboxPick">15</div>
+                            </div>
+                            <div class="flex">
+                                <div class=" seatboxPick1">16</div>
+                                <div class=" seatboxPick1">17</div>
+                            </div>
+                            <div class="flex">
+                                <div class="seatboxPick">18</div>
+                                <div class="seatboxPick">19</div>
+                            </div>
+                            <div class="flex">
+                                <div class="seatboxPick">20</div>
+                                <div class="seatboxPick">21</div>
+                            </div>
+                            <div class="flex">
+                                <div class="seatboxPick">22</div>
+                                <div class="seatboxPick">23</div>
+                            </div>
+                        </div>
+                        <div class="two">
+                            <div class="flex">
+                                <div class="seatboxPick">24</div>
+                                <div class="seatboxPick">25</div>
+                            </div>
+                            <div class="flex">
+                                <div class="seatboxPick">26</div>
+                                <div class="seatboxPick">27</div>
+                            </div>
+                            <div class="flex">
+                                <div class="seatboxPick">28</div>
+                                <div class="seatboxPick">29</div>
+                            </div>
+                            <div class="flex">
+                                <div class=" seatboxPick1">30</div>
+                                <div class="seatboxPick">31</div>
+                            </div>
+                            <div class="flex">
+                                <div class="seatboxPick">32</div>
+                                <div class=" seatboxPick1">33</div>
+                            </div>
+                            <div class="flex">
+                                <div class=" seatboxPick1">34</div>
+                                <div class=" seatboxPick1">35</div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="rightseat">
+                        <div class="flex">
+                            <div class="seatboxPick">36</div>
+                            <div class="seatboxPick">37</div>
+                        </div>
+                        <div class="flex">
+                            <div class="seatboxPick">38</div>
+                            <div class="seatboxPick">39</div>
+                        </div>
+                        <div class="flex">
+                            <div class=" seatboxPick1">40</div>
+                            <div class=" seatboxPick1">41</div>
+                        </div>
+                        <div class="flex">
+                            <div class="seatboxPick">42</div>
+                            <div class=" seatboxPick1">43</div>
+                        </div>
+                        <div class="flex">
+                            <div class="seatboxPick">44</div>
+                            <div class="seatboxPick">45</div>
+                        </div>
+                        <div class="flex">
+                            <div class="seatboxPick">46</div>
+                            <div class="seatboxPick">47</div>
+                        </div>
+                    </div>
+                </div>
+                <div id="textprice">
+                    <p>You have selected
+                        <span id="seatNum">0</span> seats for a price of ￦ <span id="priceNum">0</span>
+                    </p>
+                </div>
+                <input type="button" value="예매하기" id="movieBooking">
+            </div>
+        </div>
+    </div>
+
+</body>
+<script src="./common.js"></script>
+
+</html>
