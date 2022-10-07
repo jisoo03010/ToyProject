@@ -1,0 +1,403 @@
+@import url('https://fonts.googleapis.com/css2?family=East+Sea+Dokdo&display=swap');
+*{
+    margin: 0; 
+    padding: 0;
+    
+}
+ul, li{
+    list-style: none;
+    font-family: 'East Sea Dokdo', cursive;
+}
+body{
+    overflow-x: hidden;
+}
+a{
+    text-decoration: none; 
+    color:inherit;
+}
+img{
+    vertical-align: middle;
+     border: none; 
+     width: 130PX;
+}
+section{
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+
+}
+.container{width: 1200px; margin: 0 auto;}
+.header{
+    border-bottom: 1px solid  #000000; 
+    position: relative; 
+    z-index: 100;
+    background-color: rgb(223, 226, 21);
+}
+.header>div{
+    height: 99px; 
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center;
+}
+.logo a{display: block;}
+.gnb a{
+    display: block; 
+    transition: 0.3s;
+}
+.gnb>ul{
+    display: flex; 
+    margin-right: 20px;
+}
+
+.gnb>ul>li{position: relative;}
+
+.gnb>ul>li>a{
+    padding: 0 40px; 
+    font-size: 27px; 
+    color:#101111; 
+    line-height: 50px;
+}
+.gnb>ul>li:hover>a{
+    color:#fff; 
+    background: rgb(234, 238, 24);
+}
+
+.gnb>ul>li>ul {
+    position: absolute; 
+    height: 160px; 
+    left: 0; 
+    right: 0; 
+    display: none;
+}
+
+.gnb>ul:hover ul{display: block;}
+
+.gnb>ul>li>ul>li>a{
+    line-height: 40px; 
+    text-align: center;
+    color:rgb(223, 226, 21);
+    font-size: 25px;
+}
+.gnb>ul>li>ul a:hover{
+    background: rgb(223, 226, 21); 
+    color:rgb(61, 56, 56);
+}
+
+.gnb {margin-top: 50px;}
+.slide{
+    height: auto;
+}
+.slide>ul{
+    position: relative;
+    height: auto;
+    margin: 0 auto;
+    width: 80vw;
+    display: flex;
+    justify-content: space-between;
+}
+.slide>ul>li{
+    height: auto;
+    width: 40%;
+}
+.slide>ul>li>img{
+    width: 100%;
+    border: 25px outset rgb(238, 217, 31);
+    border-radius: 25px;
+    
+}
+.slide>ul>li>img:hover{
+    border: 25px outset rgb(43, 41, 24);
+}
+
+.eventNum1{
+    font-family: 'East Sea Dokdo', cursive;
+    font-size: 77px;
+    position: relative;
+    text-align: center;
+}
+.eventNum2{
+    font-family: 'East Sea Dokdo', cursive;
+    font-size: 78px;
+    text-align: center;
+    position: relative;
+}
+.slide>div{
+    position: relative;
+    text-align: center;
+    line-height: 150px;
+    font-size: 90px;
+    font-family: 'East Sea Dokdo', cursive;
+    width: 100%;
+    height: 150px;
+}
+.watchword1{
+    background: rgb(238, 217, 31);
+    margin-top: 10vh;
+}
+.watchword2{
+    background: rgb(43, 41, 24);
+    color: white;
+}
+.watchword3{
+    background: rgb(238, 217, 31);
+}
+.watchword1__img1{
+    width: 6%;
+    position: absolute;
+    left: 84%;
+    margin-top: 3.3%;
+}
+.watchword1__img2{
+    width: 6%;
+    position: absolute;
+    right: 7%;
+    margin-top: 2.3%;
+   
+}
+.watchword1__img3{
+    width: 6%;
+    position: absolute;
+    right: 2%;
+    margin-top: 1.3%;
+}
+.watchword1__img4{
+    width: 6%;
+    position: absolute;
+    left: 2%;
+    margin-top: -7.7%;
+}
+.tjdqns-section{
+    position: relative;
+}
+.tjdqns{
+    background: rgb(255, 255, 255);
+    width: 100%;
+    height: 130px;
+    position: relative;
+    text-align: center;
+    font-size: 65px;
+    font-family: 'East Sea Dokdo', cursive;
+    line-height: 130px;
+    border-bottom: 1px solid black;
+}
+.ingredientimg{
+    left: 28%;
+    position: relative;
+    width: 48%;
+}
+.healt{
+    font-size: 65px;
+    font-family: 'East Sea Dokdo', cursive;
+    line-height: 130px;
+    position: relative;
+    width: 100%;
+    text-align: center;
+    height: 130px;
+    border-bottom: 1px solid black;
+}
+.unnamedimg{
+    width: 100%;
+    height: 396px;
+    position: absolute;
+    left: 0%;
+    bottom: -2px;
+}
+.Symptoms{
+    position: relative;
+    top:136px;
+    display: flex;
+    justify-content: space-around;
+}
+.Symptoms>li{
+    position: relative;
+    border: 1px solid black;
+    height: 350px;
+    width: 286px;
+}
+.Symptoms>li>img{
+    width: 286px;
+    height: 200px;
+}
+.Symptom_text_box1{
+    text-align: center;
+    margin-top: -5px;
+    font-size: 50px;
+    font-family: 'East Sea Dokdo', cursive;
+    background:  rgb(238, 217, 31);
+    width: 286px;
+    height: 155px;
+    line-height: 155px;
+}
+.Symptom_text_box2{
+    text-align: center;
+    margin-top: -5px;
+    font-size: 50px;
+    font-family: 'East Sea Dokdo', cursive;
+    background:  rgb(238, 217, 31);
+    width: 286px;
+    height: 155px;
+    line-height: 155px;
+}
+.Symptom_text_box3{
+    text-align: center;
+    margin-top: -5px;
+    font-size: 50px;
+    font-family: 'East Sea Dokdo', cursive;
+    background:  rgb(238, 217, 31);
+    width: 286px;
+    height: 155px;
+    line-height: 155px;
+}
+.Symptom_text_box4{
+    text-align: center;
+    margin-top: -5px;
+    font-size: 50px;
+    font-family: 'East Sea Dokdo', cursive;
+    background:  rgb(238, 217, 31);
+    width: 286px;
+    height: 155px;
+    line-height: 155px;
+}
+.Advantages-section{
+    position: relative;
+}
+.Advantages{
+    position: absolute;
+    background-color:  rgb(245, 245, 220);
+    width: 100%;
+    height: 763px;
+}
+.Advantages>ul{
+    position: absolute;
+    display: flex;
+    bottom: 110px;
+    left: 5%;
+}
+.Round-square{
+    width: 447px;
+    border-radius: 121px;
+    position: relative;
+    font-family: 'East Sea Dokdo', cursive;
+    
+}
+.Round-square>p{
+    padding: 70px 0px;
+    text-align: center;
+    
+}
+.square1{
+    background: rgb(191, 230, 17);
+    padding: 24px 0px;
+    left: 72px;
+    font-size: 40px;
+}
+.square2{
+    background: rgba(238, 217, 31, 0.411);
+    padding: 10px 0px;
+    left: 15px;
+    font-size: 30px;
+}
+.square3{
+    background:  rgba(43, 41, 24, 0.788);
+    padding: 24px 0px;
+    right:34px;
+    font-size: 40px;
+}
+.Advantages__text{
+    text-align: center;
+    position: relative;
+    top: 10%;
+    font-family: 'East Sea Dokdo', cursive;
+    font-size: 75px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.footer{
+    background-color: rgb(43, 43, 43);
+    width: 100vw;
+    height: 230px;
+    position: relative;
+}
+.bag{
+  position: relative;
+}
+.bag>img{
+    left: 86px;
+    width: 13%;
+    position: absolute;
+    top: 27px;
+}
+.bag>p{
+    color: white;
+    font-family: 'East Sea Dokdo', cursive;
+    position: absolute;
+}
+.footer__Text1{
+    font-size: 35px;
+    left: 20%;
+    top: 32px;
+}
+.footer__Text2{
+    font-size: 25px;
+    left: 60%;
+    top: 32px;
+}

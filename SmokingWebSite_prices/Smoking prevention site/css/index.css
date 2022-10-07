@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=East+Sea+Dokdo&display=swap');
+*{
+    margin: 0;
+    text-decoration: none;
+}
+.bgborder{
+    background-color: rgb(223, 226, 21);
+}
+.bg-text1{
+    position: absolute; 
+    top: 110px;   
+    width: 100%;
+    color:  rgba(11, 12, 4, 0.664);
+    font-size: 4vw;
+    font-family: 'East Sea Dokdo', cursive; 
+    text-align: center; 
+}
+.bg-text2{
+    top: -10px;
+    position: relative;
+    color: rgb(198, 201, 32);
+    font-size: 11vw;
+    text-align: center;
+    font-family: 'East Sea Dokdo', cu sive;
+}
+.people-img{
+    margin-left: 25%;
+    width: 46%;
+    height: 100%;
+    margin-top: 20%;
+}
+.cet-img{
+    left: 59%;
+    width: 33%;
+    position: absolute;
+    top: 40%;
+}
+.cet-text{
+    position: absolute;
+    top: 61%;
+    left: 64.2%;
+    font-size: 545%;
+    font-family: 'East Sea Dokdo', cursive;
+}
+.cet-img2{
+    left: 20%;
+    width: 29%;
+    position: absolute;
+    top: 63%;
+}
+
+.cet-text2{
+    position: absolute;
+    top: 73%;
+    left: 29%;
+    font-size: 240%;
+    font-family: 'East Sea Dokdo', cursive;
+    color: rgba(11, 12, 4, 0.664);
+}
+.news-text_color{
+    top: 136%;
+    position: absolute;
+    background: rgb(223, 226, 21);
+    width: 100%;
+    height: 170px;
+    font-family: 'East Sea Dokdo', cursive;
+}
+.news-text_1{
+    font-size: 200%;
+    position: relative;
+    top: 20%;
+    left: 10%;
+}
+.news-text_2{
+    font-size: 300%;
+    position: relative;
+    top: 20%;
+    left: 19%;
+}
+.Q{
+    display: inline-block;
+    background: white;
+    text-align: center;
+    position: absolute;
+    z-index: 10;
+    transition: .4s;
+}
+.Q1{
+    font-size: 380%;
+    width: 12%;
+    height: 64px;
+    top: 72%;
+    left: 28.5%;
+}
+.Q:hover{
+    opacity: 0;
+    
+}
+.Q2{
+    font-size: 490%;
+    width: 25%;
+    height: 103px;
+    top: 61%;
+    left: 63.5%;
+}
+.toNext{
+    margin-top: -8px;
+    text-align: center;
+}
+.man_image{
+    position: absolute; 
+    width: 20%;
+}
+.man_image_text{
+    background-color: rgb(223, 226, 21);
+    padding: 7px;
+    text-align: center;
+    border: 1px solid rgb(223, 226, 21);
+    border-radius:42px;
+    position: relative ;
+    font-family: 'East Sea Dokdo', cursive;
+    color: rgb(34, 31, 31);
+    font-size: 3vw;
+}

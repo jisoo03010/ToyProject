@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=East+Sea+Dokdo&display=swap');
+*{margin: 0; padding: 0; text-decoration: none;}
+html{
+    height: 100%;
+}
+body{
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    overflow: hidden;
+}
+.main-img>img{
+    width: 55%;
+    text-align: center;
+    height: 65%;
+    background-size: cover;
+    background-position: center center;
+    margin-left: 23%;
+    margin-top: 4%;
+}
+.main-img{
+    background:rgb(223, 226, 21);
+    height: 100%;
+    width: 100%;
+    margin: 0 auto;
+}
+.click-box{
+    position: absolute;
+    bottom: 122px;
+    left: 30%;
+    line-height: 100%;
+    background-color: rgb(37, 37, 35);
+    width: 40%;
+    height: 52px;
+    text-align: center;
+    border: 1px solid rgb(37, 37, 35);
+    border-radius: 50px;
+    font-size: 3vw;
+    text-decoration: none;
+    color: white;
+    font-family: 'East Sea Dokdo', cursive;
+}
+.man-img{  
+    width: 20vw;
+    position: absolute;
+    left: 30px;
+    top: 25vh;
+}
+section{
+    position: relative;
+    background:rgb(223, 226, 21);
+    width: 100vw;
+    height: 100vh;
+}
+.thro1{
+    font-family:'East Sea Dokdo';
+    font-size: 5vw;
+    position: relative; 
+    left: 23vw;
+    top: 35vh
+}
+.thro2{
+    font-family: 'East Sea Dokdo';
+    font-size: 8vw;
+    position: relative;
+    left: 22vw;
+    top: 30vh;
+}
+.button{
+    background: rgb(37, 34, 34);
+    padding: 7px 50px;
+    border: 1px solid rgb(37, 34, 34);
+    border-radius: 100px;
+    font-size: 309%;
+    text-align: center;
+    line-height: 50px;
+    position: absolute;
+    bottom: 150px;
+    right: 100px;
+    color: white;
+    font-family: 'East Sea Dokdo';
+}

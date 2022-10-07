@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/common.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"> </script>
+    <script>
+        function menuOpen() {
+            $('ul', this).stop().slideToggle(300)
+        }
+
+        var pageCnt = 1
+        function nextPage() {
+            event.preventDefault()
+            $('.main-img').animate({ marginTop: -100 * pageCnt + 'vh' }, 500)
+            pageCnt++;
+        }
+
+        window.onload = function () {
+            $('html,body').animate({ scrollTop: 0 })
+        }
+    </script>
+
+</head>
+
+<body>
+    <section class="main-img">
+        <a href="#" onclick="nextPage()" class="click-box">금연인생이 궁금하다면 드루와 드루와 <strong>GO</strong> </a>
+        <img src="../img/mainimg.png" alt="">
+    </section>
+
+    <section>
+        <span class="thro1">날 소개하지 난 금연인생이 얼마나 좋은지 도와주러온</span><br>
+        <span class="thro2">금연~! 맨! 이라고 해</span>
+        <a class="button" href="./index.html">넘어가기</a>
+        <img src="../img/man.png" alt="" class="man-img">
+    </section>
+</body>
+
+</html>
