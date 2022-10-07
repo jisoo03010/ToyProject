@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Sniglet&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    text-decoration: none
+}
+
+ul,
+li {
+    list-style: none;
+}
+
+header>p {
+    border-bottom: 1px solid #4d5f68;
+    text-align: center;
+    font-size: 35px;
+    color: #4d5f68;
+    font-weight: bold;
+    font-family: 'Song Myung', serif;
+}
+
+section {
+    width: 100%;
+    height: 100vh;
+}
+
+section>h3 {
+    margin-top: 100px;
+    margin-left: 20px;
+    color: #4d5f68;
+}
+
+header>p>img {
+    width: 2%;
+    height: 2%;
+}
+
+/* section */
+.shpdiv>div {
+    float: left;
+    position: relative;
+    background-color: #c75438c9;
+    margin: 40px 49px 0 28px;
+    height: 331px;
+    width: 300px;
+    border-radius: 30px;
+}
+
+.shpdiv>.brand>b {
+    float: left;
+    padding-left: 120px;
+    padding-top: 20px;
+}
+
+.brand>img {
+    width: 240px;
+    margin-left: 30px;
+    margin-top: 30px;
+    border-radius: 10px;
+    -webkit-filter: brightness(0.30);
+    filter: brightness(0.60);
+    transition: .5s;
+}
+
+.brand>img:hover {
+    -webkit-filter: brightness(0.30);
+    filter: brightness(1);
+}
+
+.section {
+    position: relative;
+    background-color: #c7543888;
+}
+
+.section>b {
+    position: absolute;
+    top: 7%;
+    width: 300px;
+    right: 40%;
+    font-size: 30px;
+    font-family: 'Song Myung', serif;
+
+}
+
+.shbox {
+    background-color: #c7543854;
+    width: 250px;
+    height: 250px;
+    float: left;
+    margin-left: 43px;
+    margin-bottom: 40px;
+    margin-top: 250px;
+    border-radius: 30px;
+}

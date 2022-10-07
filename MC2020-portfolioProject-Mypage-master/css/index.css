@@ -1,0 +1,210 @@
+@import url('https://fonts.googleapis.com/css2?family=Sniglet&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jua&family=Song+Myung&display=swap');
+
+html::-webkit-scrollbar {
+    display: none;
+    overflow-y: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul,
+li {
+    list-style: none;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    width: 300px;
+    position: fixed;
+    height: 100%;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: none;
+    /* background: #305017; */
+    background: #c75438c2;
+    /* background:#4d5f686c; */
+    /* background:#81aab3c0; */
+    /* background:#B4CCD4; */
+    /* background:#D3E1E6; */
+}
+
+.logo-img {
+    position: relative;
+    width: 3%;
+    float: right;
+    margin-top: 13px;
+    padding-right: 32px;
+}
+
+.logo-img1 {
+    position: relative;
+    width: 4.5%;
+    float: right;
+    margin-top: 2px;
+    padding-right: 20px;
+}
+
+section {
+    width: 100%;
+    height: 100vh;
+}
+
+.OneSection {
+    background-size: cover;
+    width: 100%;
+    display: block;
+    height: 100vh;
+}
+
+.line {
+    border-bottom: 21px solid black;
+    display: block;
+}
+
+
+/* 여기서부터 목업 페이지 시작 */
+.mockup {
+    background: #d16e40;
+    position: relative;
+}
+
+.mockup>div {
+    width: 60vw;
+    height: 77vh;
+    position: absolute;
+    top: 10vh;
+    left: 18vw;
+}
+
+.mockup>img {
+    height: 100%;
+    position: absolute;
+    left: 4.4%;
+    top: 0.5%;
+}
+
+.everybox {
+    background-image: url(../images/computerbackgroundImg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    flex-direction: column;
+    align-content: flex-start;
+    flex-wrap: wrap;
+    display: flex;
+}
+
+.blurback {
+    position: relative;
+    transition: 2s;
+    opacity: 1;
+}
+
+.blurback>div>img {
+    position: relative;
+    z-index: 99;
+    width: 100%;
+    height: 77vh;
+    filter: blur(2px);
+    -webkit-filter: blur(2.4px);
+}
+
+.blurback>.blurback_img {
+    width: 8%;
+    border-radius: 100%;
+    position: relative;
+    z-index: 99;
+    bottom: 70%;
+    left: 45%;
+}
+
+.blurback_img2 {
+    width: 5vh;
+    position: absolute;
+    bottom: 44.5%;
+    left: 56.3%;
+    z-index: 99;
+    filter: invert(100%) sepia(0%) saturate(7492%) hue-rotate(138deg) brightness(97%) contrast(96%);
+
+}
+
+.blurback_img2:hover {
+    filter: invert(18%) sepia(1%) saturate(278%) hue-rotate(41deg) brightness(91%) contrast(89%);
+}
+
+.blurback>p {
+    color: white;
+    position: relative;
+    width: 100px;
+    z-index: 99;
+    bottom: 70%;
+    font-size: 2.5vh;
+    left: 47%;
+}
+
+input {
+    background-color: rgba(231, 231, 231, 0.534);
+    border: 1px solid rgba(231, 231, 231, 0.534);
+    outline: none;
+    z-index: 99;
+    position: absolute;
+    bottom: 35vh;
+    height: 3vh;
+    width: 8.5vw;
+    border-radius: 7px;
+    font-size: 20px;
+    left: 42%;
+}
+
+
+.everybox>div img {
+    width: 100%;
+    float: left;
+    -webkit-transition: .3s;
+    -moz-transition: .3s;
+    -ms-transition: .3s;
+    -o-transition: .3s;
+    transition: .3s;
+    transition-property: transform;
+}
+
+.everybox>div {
+    margin: 1vh;
+    width: 5vw;
+    height: 5vw;
+}
+
+.click:hover img {
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    -o-transform: scale(1.2);
+    transform: scale(1.2);
+}
+
+#folderpage {
+    width: 70%;
+    border-radius: 10px;
+    position: absolute;
+    top: 30px;
+    left: 25%;
+    display: none;
+    height: 70%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url(../images/folderpage.png);
+}
+
+.pagein {
+    width: 30%;
+    margin-top: 80px;
+    margin-left: 160px;
+}

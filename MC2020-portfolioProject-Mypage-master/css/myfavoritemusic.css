@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Sniglet&display=swap');
+*{padding: 0;margin: 0;}
+a{text-decoration: none}
+ul,li{list-style: none;}
+header>div{
+    border-bottom: 1px solid #4d5f68;
+    text-align: center;
+    font-size: 35px;
+   color:#4d5f68; 
+   font-weight: bold;
+    font-family: 'Song Myung', serif;
+}
+section>h3{
+    margin-top: 100px;
+    margin-left: 20px;
+    color: #4d5f68;
+}
+header>div>img{
+    width: 2%;
+    height: 2%;
+}
+.profile{margin-top: 30px;}
+.profile>a>li{
+    width: 130px;
+    height: 130px;
+    background-color: #7070706b;
+    margin-left: 20px;
+    opacity: 0.7;
+    transition: .4s;
+    float: left;
+    background-size: cover;
+}
+.profile>a>li:hover{opacity: 1 ;}
+.profile>a:nth-child(1)>li{
+    background-image: url(../images/mu1.jpg);
+   
+}
+.profile>a:nth-child(2)>li{
+    background-image: url(../images/the_twilight_saga_breaking_dawn_part_1.jpg);
+}
+.profile>a:nth-child(3)>li{
+    background-image: url(../images/mu3.jpg);
+}
+.profile>a:nth-child(4)>li{
+    background-image: url(../images/MU4.jpg);
+}
+.profile>a:nth-child(5)>li{
+    background-image: url(../images/MU5.jfif);
+}
+.section2>h3{ 
+    margin-top:200px;
+    color: #4d5f68;
+}
+.good{margin-top: 30px;position: relative;}
+.good>li{
+    width: 130px;
+    opacity: 0.7;
+    transition: .4s;
+    height: 130px;
+    background-color: #4d5f68;
+    margin-left: 20px;
+    float: left;
+    font-weight: bold;
+    background-size: cover;
+}
+.good>li>p{
+    position: relative;
+    top: 134px;
+}
+.good>li:hover{opacity: 1}
+.good>li:nth-child(1){
+    background-image: url(../images/bla.jfif);
+}
+.good>li:nth-child(2){
+    background-image: url(../images/pop.jpg);
+}
+.good>li:nth-child(3){
+    background-image: url(../images/ind.jfif);
+}
+.text>li:nth-child(1){
+    font-weight: bold;
+    position: absolute;
+    float: left;
+    left: 27px;
+    font-size: 27px;
+    top: 63.5%;
+    margin-left: 40px;
+
+}
+.text>li:nth-child(2){
+    font-weight: bold;
+    position: absolute;
+    font-size: 27px;
+    float: left;
+    left: 12%;
+   
+    top: 63.5%;
+    margin-left: 40px;
+
+}
+.text>li:nth-child(3){
+    font-weight: bold;
+    position: absolute;
+    font-size: 27px;
+    float: left;
+    left: 21.5%;
+    
+    top: 63.5%;
+    margin-left: 40px;
+
+}

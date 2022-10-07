@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Sniglet&display=swap');
+*{padding: 0;margin: 0;}
+a{text-decoration: none}
+ul,li{list-style: none;}
+header>div{
+    border-bottom: 1px solid #4d5f68;
+    text-align: center;
+    font-size: 35px;
+   color:#4d5f68; 
+   font-weight: bold;
+    font-family: 'Song Myung', serif;
+}
+header>div>img{
+    width: 2%;
+    height: 2%;
+}
+.slide{
+    width: 800px;
+    height: 700px;
+    margin: 0 auto;
+    overflow: hidden;
+    margin-top: 40px;
+    box-shadow: 1px 13px 17px 7px rgb(170, 170, 170);
+
+}
+.slide>li{
+    float: left;
+    background-size: cover;
+    width: 100%;
+    position: relative;
+    height: 100%;
+    transition: .4s;
+    border: 25px outset #4d5f68;
+    box-sizing: border-box;
+}
+section{position:relative;}
+.slide>li:nth-child(1){
+    background-image: url(../images/BandPhoto_2020_12_24_12_24_08.jpg);
+}
+.slide>li:nth-child(2){
+    background-image: url(../images/IMG_20210101_134801_447.jpg);
+}
+.slide>li:nth-child(3){
+    background-image: url(../images/IMG_20210101_134801_501.jpg);
+}
+.button>a{
+    background-color: rgba(255, 255, 255, 0.685);
+    border-radius:27px;
+    color: rgb(29, 29, 29);
+    width: 140px;
+    font-size: 23px;
+    line-height: 30px;
+    font-weight: bold;
+    position: absolute;
+    height: 30px;
+    font-family: 'Song Myung', serif;
+    text-align: center;
+    top: -2.5%;
+    left: 23%;
+    transition: .5s;
+    background-size: 200% auto;
+}
+.button>a:hover{
+    background-color: rgba(151, 151, 151, 0.39);
+    background-position: -100% 0;
+}
+.slide2{
+    width: 800px;
+    height: 700px;
+    margin: 0 auto;
+    overflow: hidden;
+    margin-top: 77px;
+    box-shadow: 1px 13px 17px 7px rgb(170, 170, 170);
+
+}
+.slide2>li{
+    float: left;
+    background-size: cover;
+    width: 100%;
+    position: relative;
+    height: 100%;
+    transition: .4s;
+    border: 25px outset #6d5532;
+    box-sizing: border-box;
+}
+.slide2>li:nth-child(1){
+    background-image: url(../images/foodimg1.jpg);
+}
+.slide2>li:nth-child(2){
+    background-image: url(../images/foodimg2.jpg);
+}
+.slide2>li:nth-child(3){
+    background-image: url(../images/foodimg3.jpg);
+}
+.button2>a{
+    background-color: rgba(255, 255, 255, 0.685);
+    border-radius:27px;
+    color: rgb(29, 29, 29);
+    width: 140px;
+    font-size: 23px;
+    line-height: 30px;
+    font-weight: bold;
+    position: absolute;
+    height: 30px;
+    font-family: 'Song Myung', serif;
+    text-align: center;
+    top: 50%;
+    left: 22%;
+    transition: .5s;
+    background-size: 200% auto;
+}
+.button2>a:hover{
+    background-color: rgba(151, 151, 151, 0.39);
+    background-position: -100% 0;
+}

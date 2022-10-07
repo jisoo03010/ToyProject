@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/myfavoritephoto.css">
+</head>
+<body>
+    <header>
+        <div>My favorite Photo</div>
+        <section>
+        <ul class="slide">
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+        <div class="button">
+            <a href="#">
+                Scenery
+            </a>
+        </div>
+        <ul class="slide2">
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+        <div class="button2">
+            <a href="#">
+                Food
+            </a>
+        </div>
+    </section>
+    </header>
+    <script>
+        let slideContainer =  document.getElementsByClassName("slide")[0]
+        let slides =slideContainer.getElementsByTagName("li")
+        let count = 0;
+        function slide(){
+            for(let i = 0; i<slides.length; i++){
+                slides[i].style.top = -(slideContainer.clientHeight)*(count%3)+"px"
+
+            }count++;
+        }setInterval(slide,2300)
+        //more버튼 
+        let slideContainer2 =  document.getElementsByClassName("slide2")[0]
+        let slides2 =slideContainer2.getElementsByTagName("li")
+        let count1 = 0;
+        function slide2(){
+            for(let i = 0; i<slides2.length; i++){
+                slides2[i].style.top = -(slideContainer2.clientHeight)*(count1%3)+"px"
+
+            }count1++;
+        }setInterval(slide2,2300)
+    
+    
+    
+    
+    
+    
+    
+    </script>
+</body>
+</html>
