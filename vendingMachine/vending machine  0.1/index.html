@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .menu input {
+            color: rgb(255, 0, 0);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="menu">
+        메뉴 선택 : &nbsp;
+        <input type="button" value="커피(700원)" name="coffee" id="coffee" onclick="moneyTenSpending(),  menu2() ">
+        <input type="button" value="옥수수수염차(1000원)" name="cornBeardTea" id="cornBeardTea"
+            onclick="moneyOneSpending(),  menu2() ">
+        <input type="button" value="물(500원)" name="water" id="water" onclick="moneyFiveSpending(),  menu2() ">
+    </div>
+    <br>
+    <div>
+        돈 넣기 : &nbsp;
+        <input type="button" value="1000원" name="1000" id="ten" onclick="moneyTen(), menu()">
+        <input type="button" value="500원" name="500" id="five" onclick="moneyFive(), menu()">
+        <input type="button" value="100원" name="100" id="one" onclick="moneyOne(), menu()">
+    </div>
+    <br>
+    <div id="priceAll">현재 금액 : <span id="price"></span>원</div>
+</body>
+<script src="./common.js"></script>
+
+</html>
