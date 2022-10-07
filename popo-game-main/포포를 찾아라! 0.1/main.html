@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/301baa76b2.js" crossorigin="anonymous"></script>
+    <title>포포를 찾아라!</title>
+    <link rel="stylesheet" href="./common.css">
+</head>
+
+<body>
+    <div id="container">
+        <img src="https://kimmsoll.github.io/whale-game-js/imgs/bg/logo_bg1.png" alt="">
+    </div>
+
+    <!--  게임 컨텐츠 부분 -->
+    <div id="backgroundBanner" style="display: none;">
+        <div id="scoreBox">
+            <img src="https://kimmsoll.github.io/whale-game-js/imgs/bg/bg1.png" alt="">
+            <i class="fas fa-times" id="close"></i>
+            <div id="step">
+                <div id="step1" class="stepbox">
+                    <i class="fas fa-lock-open"></i>
+                    <span>1</span>
+                </div>
+                <div id="step2" class="stepbox">
+                    <i class="fas fa-lock"></i>
+                    <span>2</span>
+                </div>
+                <div id="step3" class="stepbox">
+                    <i class="fas fa-lock"></i>
+                    <span>3</span>
+                </div>
+                <div id="step4" class="stepbox">
+                    <i class="fas fa-lock"></i>
+                    <span>4</span>
+                </div>
+                <div id="step5" class="stepbox">
+                    <i class="fas fa-lock"></i>
+                    <span>5</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="con">
+        <div id="contents">
+            <header>
+                <div id="replay" onClick="window.location.reload()"><i class="fas fa-redo-alt"></i></div>
+                <div id="play">
+                    <i class="far fa-play-circle" id="i"></i>
+                    <i class="far fa-stop-circle" style="display: none;" id="newI"></i>
+                    <span id="text">PLAY</span>
+                </div>
+                <div id="pop"><i class="fas fa-question-circle"></i></div>
+            </header>
+            <div id="score">
+                <div id="star">
+                    <i class="fas fa-star"></i>
+                </div>
+            </div>
+            <div id="randomImage"></div>
+            <div id="time">05:00</div>
+            <!-- 게임 종료시 다시 게임을 시작할 수 있는 버튼 -->
+            <div id="timeOut_AfterReplay">
+                <div id="repalybutton"><i class="fas fa-reply-all"></i></div>
+                <br><span>REPLAY ?</span><br>
+                <span>엄마 🐳: 포포~ 이눔시끼 어딨는 거야~</span>
+            </div>
+            <!------------------------------------------------------------------>
+            <div id="game_field">엄마 고래가 사라져버린 장난꾸러기 아기 고래 포포를
+                애타게 찾고 있어요. 기회는 한 번뿐! 👀
+                PLAY 버튼을 눌러
+                포포가 무사히 엄마를 만날 수 있게 도와주세요~!</div>
+            <div id="game_success">
+                REPLAY ?<br>
+                엄마 🐳: 정말 고마워요~ 당신의 눈썰미에 건배!!</div>
+            <div id="gamepage">
+                <img src="https://kimmsoll.github.io/whale-game-js/imgs/bg/bg1.png" alt="">
+                <div id="imgsIconBox">
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="./common.js"></script>
+<script src="./common2.js"></script>
+
+</html>

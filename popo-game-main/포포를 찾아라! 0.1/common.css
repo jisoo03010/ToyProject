@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Gaegu:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+body { margin: 0; padding: 0;}
+#container { position: absolute; height: 100vh;transition: 2s;}
+#container>img { width: 100vw; height: 100vh; opacity: 1; background-repeat: no-repeat;}
+.con {width: 100vw; height: 100vh; background: linear-gradient(#6be9ff, #4081e9);}
+#contents { position: relative; top: 50%; left: 50%;transform: translate(-50%, -50%); transition: 2s; width: 696px;height: 810px; opacity: 0;}
+
+header { width: 100%; display: flex; z-index: 999999999; justify-content: space-between;}
+#replay,#pop { width: 55px; height: 55px; border-radius: 10px; position: relative; cursor: pointer;}
+#replay { background-color: #ffc0cb;}
+#replay:hover,#pop:hover { transform: scale(1.1);}
+
+#replay>i { color: white; font-size: 2em; position: absolute; top: 50%;left: 50%; transform: translate(-50%, -50%);}
+#pop>i { color: white; font-size: 2em; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);}
+#play { width: 120px; height: 45px; border-radius: 10px; display: flex; align-items: center; cursor: pointer;
+    font-size: 1.8em;  background-color: white; justify-content: space-around;
+    box-shadow: 0px 0px 5px 3px #baf7ff; animation: shadow 1s infinite ease-in-out alternate-reverse;}
+
+@keyframes shadow {0% {  box-shadow: none;}100% { box-shadow: 0px 0px 5px 5px #baf7ff; }}
+#text { margin-bottom: 4px;}
+#pop { background-color: #494238;}
+#time { width: 100px; height: 30px; border: 3px solid black; border-radius: 10px; background-color: #556b2f;  color: white; text-align: center; line-height: 30px;font-size: 1.1rem;font-family: 'Press Start 2P', cursive; margin: 0 auto; position: relative; top: 94px;}
+
+/* <!-- 게임 종료시 다시 게임을 시작할 수 있는 박스 --> */
+#timeOut_AfterReplay { width: 65%; height: 207px; background-color: #fae4a7; position: absolute; top: 310px; transform: translateX(-50%);
+    left: 50%; z-index: 9; border-radius: 8px; font-weight: 550; font-size: 1.2em; text-align: center; padding: 28px 20px 0px 20px; line-height: 40px; font-family: 'Gaegu', cursive; display: none;}
+#repalybutton {width: 75px; height: 75px; font-size: 2em; text-align: center; line-height: 75px; background-color: white; border-radius: 10px;
+    margin: 0 auto; color: #494238; cursor: pointer; animation: bell 0.15s infinite ease-in-out alternate-reverse;}
+@keyframes bell { 0% {transform: rotate(5deg);}100% { transform: rotate(-5deg); }}
+#game_field { width: 65%; height: 150px; background-color: #fae4a7; position: absolute; top: 269px; transform: translateX(-50%); left: 50%;
+    z-index: 9; border-radius: 8px; font-weight: 550; font-size: 1.2em; text-align: center;padding: 28px 20px 0px 20px;line-height: 40px; font-family: 'Gaegu', cursive; display: block;}
+#gamepage { width: 696px; top: 107px; height: 500px; position: relative;}
+#gamepage>img { position: absolute; bottom: 0; width: 100%; height: 500px; border-radius: 10px; background-color: white;}
+#imgsIconBox img {  cursor: pointer; transition: .3s; width: 70px; animation: scboxbig 0.8s infinite ease-in-out alternate-reverse;}
+#imgsIconBox2 img { transition: .3s; cursor: pointer; width: 70px; animation: scboxbig 0.8s infinite ease-in-out alternate-reverse;}
+@keyframes scboxbig {    0% { transform: scale(0.9);} 100% { transform: scale(1.1);}}
+#imgsIconBox { position: absolute; height: 100%; width: 100%;}
+#imgsIconBox2 { position: absolute; height: 100%; width: 100%;}
+#backgroundBanner { z-index: 999; position: absolute; width: 100vw; height: 100vh; background-color: rgba(0, 0, 0, 0.602);}
+#score { position: relative; width: 100%; height: 55px; cursor: pointer;}
+#star { margin-top: 10px; position: absolute; right: 0; width: 55px; height: 55px; color: gold; background-color: #494238; 
+    border-radius: 10px; font-size: 2em; text-align: center; line-height: 53px;}
+#scoreBox { position: absolute; top: 55%; left: 50%;
+    transform: translate(-50%, -50%);  width: 496px; height: 372px; background-color: white; z-index: 99; border-radius: 10px;}
+#scoreBox>i {    color: rgb(255, 255, 255); font-size: 2em; position: absolute; top: 10px; right: 15px; cursor: pointer;}
+.stepbox { text-align: center;margin-right: 40px; position: relative;}
+.stepbox span { font-size: 0.5em; position: absolute; color: white; left: 51%; top: 67%;transform: translate(-50%, -50%);}
+#step { display: flex; position: absolute; font-size: 3em; top: 41%; left: 50%;transform: translate(-50%, -50%);}
+.fa-lock-open {color: #08ff1d;} .fa-lock { color: #e2432e;}
+#scoreBox>img { width: 100%; border-radius: 10px;}
+#randomImage {width: 10%; height: 60px; margin: 0 auto; background-repeat: no-repeat; background-size: cover; background-position: center;}
+
+/*게임을 성공헀을때 나타나는 스타일*/
+#game_success { width: 65%;  height: 150px; background-color: #fae4a7; position: absolute; top: 310px;left: 50%; transform: translateX(-50%); z-index: 9;  border-radius: 8px;
+    font-weight: 550; font-size: 1.2em; text-align: center; padding: 28px 20px 0px 20px; line-height: 40px; font-family: 'Gaegu', cursive;display: none;}
+
+.imgbox { background-repeat: no-repeat; background-size: cover; background-position: center;}
+.img_boxbg01 .imgbox {background-image: url("https://kimmsoll.github.io/whale-game-js/imgs/icons/1.png");}.img_box.bg02 .imgbox {background-image: url("https://kimmsoll.github.io/whale-game-js/imgs/icons/2.png");}
+.img_box.bg03 .imgbox {background-image: url("https://kimmsoll.github.io/whale-game-js/imgs/icons/3.png");}.img_box.bg04 .imgbox {background-image: url("https://kimmsoll.github.io/whale-game-js/imgs/icons/4.png");}
+.img_box.bg05 .imgbox {background-image: url("https://kimmsoll.github.io/whale-game-js/imgs/icons/5.png");}.img_box.bg06 .imgbox {background-image: url("https://kimmsoll.github.io/whale-game-js/imgs/icons/6.png");}
+.img_box.bg07 .imgbox {background-image: url("https://kimmsoll.github.io/whale-game-js/imgs/icons/7.png");}.img_box.bg08 .imgbox {background-image: url("https://kimmsoll.github.io/whale-game-js/imgs/icons/8.png");}
+.img_box.bg09 .imgbox {background-image: url("https://kimmsoll.github.io/whale-game-js/imgs/icons/9.png");}.img_box.bg10 .imgbox {background-image: url("https://kimmsoll.github.io/whale-game-js/imgs/icons/10.png");}
+.img_box.bg11 .imgbox {background-image: url("https://kimmsoll.github.io/whale-game-js/imgs/icons/11.png");}.img_box.bg12 .imgbox {background-image: url("https://kimmsoll.github.io/whale-game-js/imgs/icons/12.png");}
+.img_box.bg13 .imgbox {background-image: url("https://kimmsoll.github.io/whale-game-js/imgs/icons/13.png");}.img_box.bg14 .imgbox {background-image: url("https://kimmsoll.github.io/whale-game-js/imgs/icons/14.png");}
+.img_box.bg15 .imgbox {background-image: url("https://kimmsoll.github.io/whale-game-js/imgs/icons/15.png");}.img_box.bg16 .imgbox {background-image: url("https://kimmsoll.github.io/whale-game-js/imgs/icons/16.png");}
+.img_box.bg17 .imgbox {background-image: url("https://kimmsoll.github.io/whale-game-js/imgs/icons/17.png");}.img_box.bg18 .imgbox {background-image: url("https://kimmsoll.github.io/whale-game-js/imgs/icons/18.png");}
+.img_box.bg19 .imgbox {background-image: url("https://kimmsoll.github.io/whale-game-js/imgs/icons/19.png");}.img_box.bg20 .imgbox {background-image: url("https://kimmsoll.github.io/whale-game-js/imgs/icons/20.png");}
+.img_box.bg21 .imgbox {background-image: url("https://kimmsoll.github.io/whale-game-js/imgs/icons/21.png");}.img_box.bg22 .imgbox {background-image: url("https://kimmsoll.github.io/whale-game-js/imgs/icons/22.png");}
+.img_box.bg23 .imgbox {background-image: url("https://kimmsoll.github.io/whale-game-js/imgs/icons/23.png");}.img_box.bg24 .imgbox {background-image: url("https://kimmsoll.github.io/whale-game-js/imgs/icons/24.png");}
+.img_box.bg25 .imgbox {background-image: url("https://kimmsoll.github.io/whale-game-js/imgs/icons/25.png");}.img_box.bg26 .imgbox {background-image: url("https://kimmsoll.github.io/whale-game-js/imgs/icons/26.png");}
+.img_box.bg27 .imgbox {background-image: url("https://kimmsoll.github.io/whale-game-js/imgs/icons/27.png");}.img_box.bg28 .imgbox {background-image: url("https://kimmsoll.github.io/whale-game-js/imgs/icons/28.png");}
+.img_box.bg29 .imgbox {background-image: url("https://kimmsoll.github.io/whale-game-js/imgs/icons/29.png");}.img_box.bg30 .imgbox {background-image: url("https://kimmsoll.github.io/whale-game-js/imgs/icons/30.png");}
