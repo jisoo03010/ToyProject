@@ -1,0 +1,76 @@
+/* 한국 미술 작품*/
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+* { margin: 0;   padding: 0;}
+
+ul,li {list-style: none;}
+a{    text-decoration: none;    color: inherit;}
+body {    scrollbar-width: none;    overflow-x: hidden;}
+html {    scroll-behavior: smooth;}
+#k_header {    color: white; background-color: #222;    z-index: 9909999;    width: 100vw;    height: 100px;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    justify-content: space-between;
+    font-family: 'Playfair Display', serif;
+}
+/* menu 부분 */
+.slide_menu {
+    width:480px;
+    height:45px;
+    line-height: 45px; 
+    text-align: center;
+    margin-right: 150px;
+    z-index: 9;
+    cursor: pointer;
+}
+.slide_menu> ul > li {
+    float:left;
+    width:120px;
+    position:relative;    
+    transition: .3s;
+    height: 40px; 
+}
+#sub_menu{height: 40px; overflow: hidden; background-color: #222;}
+#sub_menu>ul>li>a:hover{text-decoration: underline;}
+#sub_menu:hover{  height: 180px;}
+/*sub_menu*/
+#sub_menu>li{width: 120px; height: 40px; text-align: center; line-height: 40px; background-color: #222;}
+
+#Auction{text-decoration: underline; text-underline-position: under; font-weight: bold;}
+#header_display {
+    margin-left: 100px;
+    display: flex; 
+    width: 240px;
+    align-items: center;
+    justify-content: space-between;
+}
+#header_display >h3{font-size: 20px}
+#header_display>a>img {    border-radius: 100px;    background: white;    cursor: pointer;}
+
+
+.video{width: 100vw; height:  600px; overflow: hidden;     padding-top: 100px;}
+
+/*print_pakery_text_icon*/
+#print_pakery_text_icon{position: absolute;top: 526px;width: 100vw;z-index: 99;}
+/* contents */
+.contents{padding: 43px; margin-top: 200px;}
+.new_arrival{display: flex; justify-content: space-between;}
+.new_arrival>.img_box>img{width: 400px; cursor: pointer; position: relative;}
+/*contents2*/
+.contents2{display: flex; width: 100vw; position: relative; }
+.Today_Pick{width: 30vw;}
+#pick_img{  height: 100vh;}
+.text{padding-top: 200px; }
+.text>h1{font-size: 40px;}
+.text>h4{font-size: 18px;}
+#small_text_h4{font-size: 16px;}
+
+/*contents3*/
+.we_bak_box{display: flex; justify-content: space-between;}
+.we_bak_box>.we_back_flex>img{width: 420px; cursor: pointer;}
+.we_back_flex>p{font-size: 14px;}
+
+
+
+
+

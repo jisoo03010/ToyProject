@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ART Auction</title>
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <link rel="stylesheet" href="./css/Auction.css">
+    <link rel="stylesheet" href="./css/common.css">
+    <!-- 도메인 네임 아이콘-->
+    <link rel="icon" href="https://image.rocketpunch.com/company/4490/opengallery_logo_1451268990.png?s=400x400&t=inside"
+    type="image/gif">
+</head>
+
+<body>
+    <div class="container">
+        <header id="k_header">
+            <div id="header_display">
+                <a href="./index.html"><img src="./img/outline_arrow_back_black_24dp.png" alt=""></a>
+                <h3>ART Auction</h3>
+
+            </div>
+            <div class="slide_menu">
+                <ul class="menu">
+                    <li><a href="./Auction.html" id="Auction">Auction</a></li>
+                    <li><a href="./print_bakery.html">store</a></li>
+                    <li>By genre</li>
+                    <li><a href="./index.html" >Home</a></li>
+                </ul>
+            </div>
+        </header>
+        <div id="left_div"></div>
+        <div class="flex">
+            <section id="kr_artBox">
+                <div class="box">
+                    <div class="big_box">
+                        <ul>
+                            <li>
+                                <div id="art_Text1">
+                                    <p>쿠사마 야요이 Kusama Yayoi</p>
+                                    <h3>Pumpkin</h3>
+                                    <p>KRW 5,450,000,000</p>
+                                    <p class="small_text">acrylic on canvas</p>
+                                    <p class="small_text">116.50 X 91.00 cm</p>
+                                </div>
+                                <div id="art_Text2">
+                                    <p>마르크 샤갈 Marc Chagall</p>
+                                    <h3>Les Jardins de Saint Paul</h3>
+                                    <p>KRW 4,200,000,000</p>
+                                    <p class="small_text">캔버스에 유채</p>
+                                    <p class="small_text">81.00 X 116.00 cm</p>
+                                </div>
+                                <div id="art_Text3">
+                                    <p>김환기 Kim WhanKi</p>
+                                    <h3>1-Ⅶ-71 #207</h3>
+                                    <p>KRW 4,000,000,000</p>
+                                    <p class="small_text">oil on cotton</p>
+                                    <p class="small_text">170.00 X 91.50 cm</p>
+                                </div>
+                                <div id="art_Text4">
+                                    <p>쿠사마 야요이 Kusama Yayoi</p>
+                                    <h3>Gold Sky Nets</h3>
+                                    <p>KRW 3,650,000,000</p>
+                                    <p class="small_text">acrylic on canvas</p>
+                                    <p class="small_text">112.00 X 145.50 cm</p>
+                                </div>
+                                <div id="art_Text5">
+                                    <p>쿠사마 야요이 Kusama Yayoi</p>
+                                    <h3>Infinity-Nets (WFTO)</h3>
+                                    <p>Infinity-Nets (WFTO)</p>
+                                    <p class="small_text">Infinity-Nets (WFTO)</p>
+                                    <p class="small_text">130.30 X 130.30 cm</p>
+                                </div>
+                                <img src="https://www.k-artmarket.kr/images/2020/artworks/2022/415771.jpg" alt="" id="big_img">
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="small_box">
+                        <h4>Top10</h4>
+                        <ul id="s_listImage">
+                            <li>
+                                <img src="https://www.k-artmarket.kr/images/2020/artworks/2022/415771_thumb.png" alt="img1">
+                            </li>
+                            <li>
+                                <img src="https://www.k-artmarket.kr/images/2020/artworks/2022/397013_thumb.jpg" alt="img2">
+                            </li>
+                            <li>
+                                <img src="https://www.k-artmarket.kr/images/2020/artworks/2022/406621_thumb.png" alt="img3">
+                            </li>
+                            <li>
+                                <img src="https://www.k-artmarket.kr/images/2020/artworks/2022/413066_thumb.jpg" alt="img4">
+                            </li>
+                            <li>
+                                <img src="https://www.k-artmarket.kr/images/2020/artworks/2022/403659_thumb.jpg" alt="img5">
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div id="more_btn">
+                    <!-- <img src="./img/more_btn.png" alt="더 보기 버튼" id="more_btn"> -->
+                    open
+                </div>
+                <div id="banner_small"></div>
+                <div class="more_box">
+                    <div class="flex">
+                        <div class="list_box_img"><img
+                                src="https://mblogthumb-phinf.pstatic.net/20151205_177/leespider_1449294560889lWaBQ_JPEG/%BB%A1%B7%A1%C5%CD.JPG?type=w2"
+                                alt="">
+                            빨래터</div>
+                        <div class="list_box_img"><img
+                                src="https://mblogthumb-phinf.pstatic.net/20151205_284/leespider_1449294666131Pje3Y_PNG/%C8%B2%BC%D2_%C0%CC%C1%DF%BC%B7.png?type=w2"
+                                alt="">
+                            황소</div>
+                        <div class="list_box_img"><img
+                                src="https://mblogthumb-phinf.pstatic.net/20160123_250/leespider_1453526820333VrHyA_PNG/%C0%CC%BF%EC%C8%AF_%C3%D6%B0%ED%B0%A1.png?type=w2"
+                                alt="">
+                            선으로부터</div>
+                    </div>
+                    <div class="flex">
+                        <div class="list_box_img"><img
+                                src="https://mblogthumb-phinf.pstatic.net/20160426_280/leespider_1461661643705wEF9v_JPEG/%C3%B5%B0%E6%C0%DA_%C1%A4%BF%F8_1.jpg?type=w2"
+                                alt="">
+                            정원</div>
+
+                        <div class="list_box_img"><img
+                                src="https://mblogthumb-phinf.pstatic.net/20151205_115/leespider_1449295063216HPBXv_JPEG/%B9%DA%BC%AD%BA%B8_65-75.JPG?type=w2"
+                                alt="">
+                            묘법</div>
+                        <div class="list_box_img"><img
+                                src="https://mblogthumb-phinf.pstatic.net/20151205_195/leespider_1449295437178Fe0g4_JPEG/%C1%A4%BB%F3%C8%AD_%B9%AB%C1%A6_05-3-25.jpg?type=w2"
+                                alt="">
+                            무제</div>
+                    </div>
+                    <div class="flex">
+                        <div class="list_box_img"><img
+                                src="https://mblogthumb-phinf.pstatic.net/20151205_104/leespider_14493051728695Oi4R_JPEG/%C6%E6%BD%BD_1.jpg?type=w2"
+                                alt="">펜슬</div>
+
+                        <div class="list_box_img"><img
+                                src="https://mblogthumb-phinf.pstatic.net/20151205_244/leespider_1449305711499uHFce_JPEG/%BA%F3%BC%BE%C6%AE_%B9%DD_%B0%ED%C8%E5_%BA%ED%B7%E7.jpg?type=w2"
+                                alt="">빈센트 반 고흐 블룬</div>
+                        <div class="list_box_img"><img
+                                src="https://mblogthumb-phinf.pstatic.net/20151205_274/leespider_1449302286310lgy1X_JPEG/NAVER_9302227484.JPG?type=w2"
+                                alt="">마릴린 먼로</div>
+                    </div>
+                    <div class="flex">
+                        <div class="list_box_img"><img
+                                src="https://mblogthumb-phinf.pstatic.net/20151205_200/leespider_1449306555963nIS5O_JPEG/%B3%F3%BF%F8.jpg?type=w2"
+                                alt="">농원</div>
+
+                        <div class="list_box_img"><img
+                                src="https://mblogthumb-phinf.pstatic.net/20151205_217/leespider_1449295563157KRfdb_JPEG/%C1%F8%C1%F8%B9%A6.jpg?type=w2"
+                                alt="">진진묘
+                        </div>
+                        <div class="list_box_img"><img
+                                src="https://mblogthumb-phinf.pstatic.net/20151205_68/leespider_1449305597470A1wnY_JPEG/IMG_1160.JPG?type=w2"
+                                alt="">물방울
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- 작품 더 보기-->
+            <section id="section2_more">
+
+
+                <!--   -->
+                <div id="img_descriptionBox">
+                    <div id="contents2">
+                        <div id="slide_Gallary">
+                            <ul class="slide2">
+                                <li><img src="https://lh5.googleusercontent.com/p/AF1QipPomVSQE953RQPzfwZdwRiUUZhS5wkcXYKdcoE2=w203-h114-k-no"
+                                        alt="VIVIAN CHOI GALLERY 비비안초이갤러리">
+
+                                </li>
+                                <li><img src="data:image/jpeg;base64,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"
+                                        alt="린파인아트 갤러리">
+                                </li>
+                                <li><img src="https://lh5.googleusercontent.com/p/AF1QipMhol1OhT9VAgkWwpm9Z-yzk4nSKOtdG_xJ_7py=w203-h104-k-no"
+                                        alt="갤러리 마레">
+
+                                </li>
+                            </ul>
+
+
+
+                        </div>
+                        <div class="text_overflow">
+                            <ul class="text_slide">
+                                <li>
+                                    <p>VIVIAN CHOI GALLERY <br> 비비안초이갤러리<br><br>
+                                        서울특별시 용산구 회나무로28길 5
+                                    </p>
+                                </li>
+                                <li>
+                                    <p>린파인아트 갤러리<br> 잠원동 신반포로47길 56</p>
+                                </li>
+                                <li>
+                                    <p>갤러리 마레 <br>부산광역시 해운대구 해운대해변로 296</p>
+                                </li>
+                            </ul>
+                        </div>
+                        <div id="descriptionBox">
+
+                            <img src="https://mblogthumb-phinf.pstatic.net/20151205_177/leespider_1449294560889lWaBQ_JPEG/%BB%A1%B7%A1%C5%CD.JPG?type=w2" alt="" id="in_descriptionImg">
+
+
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+    </div>
+</body>
+
+<script src="./common.js"></script>
+
+</html>
