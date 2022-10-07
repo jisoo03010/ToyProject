@@ -1,0 +1,14 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    margin: 0 auto;
+}
+
+#hint {
+    width: 500px;
+    height: 50px;
+    background-color: antiquewhite;
+}

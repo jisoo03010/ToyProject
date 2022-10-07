@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>숫자 맞추기</title>
+    <link rel="stylesheet" href="./common.css">
+</head>
+
+<body>
+    <div class="container">
+        <h2>숫자ㅇ를 맞춰보세요.</h2>
+
+        <input type="text" name="" id="inputNum">
+
+        <input type="submit" value="Submit quess" id="submitbutton">
+
+
+
+
+
+        <!-- 힌트 값 나옴 -->
+        <div id="hint">
+            <span id="inputHintText"></span>
+        </div>
+    </div>
+</body>
+<script>
+    let inputNum = document.getElementById("inputNum");
+    let submitbutton = document.getElementById("submitbutton") // 제출 버튼
+    let hintBox = document.getElementById("hint")
+    var inputHintText = document.getElementById("inputHintText")
+
+    // 0 <= random <= 10
+    const random = Math.floor(Math.random() * 101);
+
+    let hideRandom = document.getElementById("inputNum").name = random
+    function clicksubmit() {
+        submitbutton.addEventListener("click", function () {
+            if (inputNum.value > hideRandom) {
+                inputHintText.innerText = inputNum.value + '보다 DOWN'
+                hintBox.style.background = "#d8503f"
+            } else if (inputNum.value < hideRandom) {
+                inputHintText.innerText = inputNum.value + '보다 UP'
+                hintBox.style.background = "#d8503f"
+            } else if (inputNum.value = hideRandom) {
+                inputHintText.innerText = inputNum.value + '성공'
+                hintBox.style.background = "#3871e0"
+            }
+        })
+    }
+    clicksubmit()
+</script>
+
+</html>
